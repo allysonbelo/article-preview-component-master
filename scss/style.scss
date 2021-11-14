@@ -72,6 +72,10 @@ body {
     padding-left: 30px;
     padding-right: 30px;
 
+    &__share{
+        display: none;
+    }
+
     &__img {
         width: 50px;
         height: 50px;
@@ -94,18 +98,20 @@ body {
             font-size: $fontSizeDefault;
             margin-top: -15px;
         }
-
-
     }
 
+    .social{
+        display: none;
+    }
+    
     .icon {
         @include flx(justify-content, center);
         align-items: center;
         width: 40px;
         height: 40px;
         background-color: $light-grayish-blue;
+        color: $very-ark-grayish-blue;
         border-radius: 50px;
-
     }
 }
 
@@ -117,4 +123,37 @@ body {
     &__link {
         color: hsl(228, 45%, 44%);
     }
+}
+
+.active{
+    background-color: $very-ark-grayish-blue;
+    
+    .profile__share{
+        display: block;
+        text-transform: uppercase;
+        font-size: $fontSizeDefault;
+        color: $grayish-blue;
+        font-family: $fonte-manrope;
+        letter-spacing: 4px;
+    }
+
+    .content__title, .content__p, .profile__img{
+        display: none;
+    }
+
+    .social{
+        display: block;
+        margin-left: 15px;
+
+        &__icon:not(:last-child){
+            margin-right: 10px;
+        }
+    }
+
+    .icon{
+        background-color: $desaturated-dark-blue;
+        color: $light-grayish-blue;
+        font-size: $fontSizeDefault;
+    }
+
 }

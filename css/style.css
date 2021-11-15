@@ -133,6 +133,7 @@ body {
   background-color: #ecf2f8;
   color: #6d7f97;
   border-radius: 50px;
+  border: none;
 }
 
 .attribution {
@@ -207,6 +208,8 @@ body {
   background-color: #6d7f97;
   color: #ecf2f8;
   font-size: 13px;
+
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -23,14 +23,14 @@
 
   <main class="container">
 
-    <figure class="header">
+    <div class="header">
       <img class="header__img" src="images/drawers.jpg" alt="Escrivaninha com vaso em cima">
-    </figure>
+    </div>
 
     <section class="content">
 
-      <h1 class="content__title">Shift the overall look and feel by adding these wonderful
-        touches to furniture in your home</h1>
+      <h2 class="content__title">Shift the overall look and feel by adding these wonderful
+        touches to furniture in your home</h2>
 
       <p class="content__p">
         Ever been in a room and felt like something was missing? Perhaps
@@ -41,9 +41,9 @@
 
     <section class="profile">
       <div class="teste">
-        <h2 class="profile__share">Share</h2>
+        <p class="profile__share">Share</p>
         <div class="social">
-          <img class="social__icon" src="images/icon-facebook.svg" alt="Facebook">
+          <img class="social__icon" aria-label="" src="images/icon-facebook.svg" alt="Facebook">
           <img class="social__icon" src="images/icon-twitter.svg" alt="Twitter">
           <img class="social__icon" src="images/icon-pinterest.svg" alt="Pintrest">
         </div>
@@ -52,11 +52,13 @@
       <img class="profile__img" src="images/avatar-michelle.jpg" alt="Person profile">
 
       <div class="content">
-        <h3 class="content__title">Michelle Appleton</h3>
+        <p class="content__title">Michelle Appleton</p>
         <p class="content__p">28 Jun 2020
       </div>
 
-      <i class="fas fa-share icon"></i>
+      <button class="icon" aria-label="Share">
+        <i class="fas fa-share"></i>
+      </button>
     </section>
   </main>
 
